@@ -1,0 +1,20 @@
+{
+    "name": "fake-angular-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "conf.js",
+    "scripts": {
+        "start": "protractor conf.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/richardlt/fake-angular-test.git"
+    },
+    "author": "richardlt <richard.le.terrier@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/richardlt/fake-angular-test/issues"
+    },
+    "homepage": "https://github.com/richardlt/fake-angular-test#readme"
+}
