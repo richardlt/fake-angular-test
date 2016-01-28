@@ -8,6 +8,14 @@ describe('flow', function() {
         expect(OnePage.title()).toEqual('Page 1');
         OnePage.click1();
         expect(TwoPage.title()).toEqual('Page 2');
+        browser.wait(function() {
+            var deferred = protractor.promise.defer();
+            TwoPage.appendElement().isPresent().then(function(isPresent) {
+                deferred.fulfill(isPresent);
+            });
+            return deferred.promise;
+        }, 10000);
+        expect(TwoPage.appendElement().getText()).toEqual('element');
         TwoPage.click1();
         expect(ThreePage.title()).toEqual('Page 3');
     });

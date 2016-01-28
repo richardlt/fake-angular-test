@@ -12,5 +12,8 @@ module.exports = {
     },
     click1: function() {
         element(by.buttonText("Click 1")).click();
+    },
+    appendElement: function() {
+        return element(by.css('.appendElement'));
     }
 };
